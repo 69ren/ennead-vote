@@ -1,0 +1,22 @@
+{
+  "name": "ennead-vote",
+  "version": "1.0.0",
+  "description": "Scripts for interacting with ennead",
+  "main": "index.js",
+  "scripts": {
+    "initialize": "cp .env.example  .env && typechain --target=ethers-v6",
+    "vote": "ts-node ./src/index.ts"
+  },
+  "author": "ren",
+  "license": "MIT",
+  "dependencies": {
+    "@typechain/ethers-v6": "^0.5.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "typechain": "^8.3.2"
+  }
+}
